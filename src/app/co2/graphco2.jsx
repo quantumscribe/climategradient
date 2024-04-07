@@ -52,7 +52,7 @@ function Graphco2() {
 
         //if you all wants to change speed of graph building, change duration below
       path.transition()
-        .duration(10000)
+        .duration(8000)
         .attrTween('d', function(d) {
           const interpolate = d3.interpolate(0, d.length);
           return function(t) {
@@ -173,12 +173,12 @@ function Graphco2() {
     }
 // see if both of you want to change colour of graphs components, you can do from code just below
     const defaultOptions = {
-      xAxisColor: 'red',
-      yAxisColor: 'blue',
+      xAxisColor: 'green',
+      yAxisColor: 'pink',
       labelXColor: 'white',
       labelYColor: 'white',
-      lineColor: 'red',
-      dotColor: 'yellow'
+      lineColor: 'yellow',
+      dotColor: 'white'
     };
 
     drawChart(defaultOptions);
