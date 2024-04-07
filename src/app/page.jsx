@@ -1,14 +1,4 @@
-"use client";
-import { Stars } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import React, { useEffect } from "react";
-import { FiArrowRight } from "react-icons/fi";
-import {
-  useMotionTemplate,
-  useMotionValue,
-  motion,
-  animate,
-} from "framer-motion";
+"use client"
 import TiltCard from "@/components/ui/TiltCard";
 import {
   Carousel,
@@ -16,8 +6,17 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
-import ButtonWrapper from "@/components/ui/spotlightbutton";
+} from "@/components/ui/carousel";
+import { Stars } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import {
+  animate,
+  motion,
+  useMotionTemplate,
+  useMotionValue,
+} from "framer-motion";
+import { useEffect } from "react";
+import { FiArrowRight } from "react-icons/fi";
 
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];

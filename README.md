@@ -13,6 +13,10 @@ Framer Motion : npm install framer-motion
 
 CLSX: npm install clsx
 
+Axios: npm install axios
+
+D3: npm install d3
+
 
 
 
