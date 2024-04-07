@@ -34,13 +34,13 @@ function Page() {
     <div className="bg-cover bg-center w-full h-screen relative overflow-hidden">
   <Image src="/CO2 IMAGE.jpg" fill />
   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-  <div className="text-white text-7xl font-bold text-center font-sans serif text-white-400 transition duration-500 ease-in-out hover:transform hover:-translate-y-12">
+  <div className="text-black text-7xl font-bold text-center font-sans serif text-white-400 transition duration-500 ease-in-out hover:transform hover:-translate-y-12">
 
 Carbon Dioxide
 </div>
   </div> 
       </div>
-    <div className='bg-black h-screen'>other components
+    <div className='bg-black h-screen text-black'>other components
       <div>wrapping graph and writing part
         <div>graph</div>
         <div className='p-5 rounded-md font-calibri body pl-5 mx-25'>
