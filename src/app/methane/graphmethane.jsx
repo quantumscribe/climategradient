@@ -102,18 +102,21 @@ function Graphmethane() {
             .attr('cy', yScale(d.methanelevel))
             .attr('r', 4)
             .attr('fill', dotColor);
-
+        
           xLine.attr('x1', xScale(d.date))
             .attr('x2', xScale(d.date))
             .style('opacity', 1);
-
+        
           yLine.attr('y1', yScale(d.methanelevel))
             .attr('y2', yScale(d.methanelevel))
             .style('opacity', 1);
-
+        
+          const tooltipWidth = tooltipRef.current.offsetWidth;
+          const tooltipHeight = tooltipRef.current.offsetHeight;
+        
           tooltip.html(`<strong style="color: black;">Date:</strong> <span style="color: black;">${d.date.toLocaleString('default', { month: 'short' })} ${d.date.getFullYear()}</span><br><strong style="color: black;">Methane level rise (ppd):</strong> <span style="color: black;">${d.methanelevel}</span>`)
-            .style('left', `${event.pageX}px`)
-            .style('top', `${event.pageY}px`)
+            .style('left', `${xScale(d.date) + margin.left}px`) // Position to the right of the data point
+            .style('top', `${yScale(d.methanelevel) + margin.top + 50}px`) // Position slightly below the data point with more space
             .style('opacity', 1);
         } else {
           chartGroup.selectAll('.dot').remove();

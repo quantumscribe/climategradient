@@ -102,18 +102,21 @@ function Graphco2() {
             .attr('cy', yScale(d.CO2ppm))
             .attr('r', 4)
             .attr('fill', dotColor);
-
+        
           xLine.attr('x1', xScale(d.date))
             .attr('x2', xScale(d.date))
             .style('opacity', 1);
-
+        
           yLine.attr('y1', yScale(d.CO2ppm))
             .attr('y2', yScale(d.CO2ppm))
             .style('opacity', 1);
-
+        
+          const tooltipWidth = tooltipRef.current.offsetWidth;
+          const tooltipHeight = tooltipRef.current.offsetHeight;
+        
           tooltip.html(`<strong style="color: black;">Date:</strong> <span style="color: black;">${d.date.toLocaleString('default', { month: 'short' })} ${d.date.getFullYear()}</span><br><strong style="color: black;">CO2(ppm):</strong> <span style="color: black;">${d.CO2ppm}</span>`)
-            .style('left', `${event.pageX}px`)
-            .style('top', `${event.pageY}px`)
+            .style('left', `${xScale(d.date) + margin.left + 10}px`) // Position to the right of the data point
+            .style('top', `${yScale(d.CO2ppm) + margin.top + 50}px`) // Position further below the data point
             .style('opacity', 1);
         } else {
           chartGroup.selectAll('.dot').remove();
