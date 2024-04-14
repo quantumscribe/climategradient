@@ -2,6 +2,9 @@
 import * as d3 from 'd3';
 import { useEffect, useRef } from 'react';
 import jsonData from './oceanwarming.json';
+import { ColorPicker, useColor } from "react-color-palette";
+import "react-color-palette/css";
+
 
 function GraphOcean() {
   const svgRef = useRef();
@@ -178,10 +181,10 @@ function GraphOcean() {
     const defaultOptions = {
       xAxisColor: 'red',
       yAxisColor: 'blue',
-      labelXColor: 'white',
-      labelYColor: 'white',
-      lineColor: 'red',
-      dotColor: 'yellow'
+      labelXColor: 'teal',
+      labelYColor: 'teal',
+      lineColor: 'teal',
+      dotColor: 'white'
     };
 
     drawChart(defaultOptions);

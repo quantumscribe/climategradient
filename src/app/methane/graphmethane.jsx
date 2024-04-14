@@ -178,10 +178,10 @@ function Graphmethane() {
     const defaultOptions = {
       xAxisColor: 'red',
       yAxisColor: 'blue',
-      labelXColor: 'white',
-      labelYColor: 'white',
-      lineColor: 'red',
-      dotColor: 'yellow'
+      labelXColor: 'lime',
+      labelYColor: 'lime',
+      lineColor: 'lime',
+      dotColor: 'white'
     };
 
     drawChart(defaultOptions);
