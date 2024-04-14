@@ -178,9 +178,9 @@ function GraphTemperature() {
     const defaultOptions = {
       xAxisColor: 'red',
       yAxisColor: 'blue',
-      labelXColor: 'white',
-      labelYColor: 'white',
-      lineColor: 'red',
+      labelXColor: 'orange',
+      labelYColor: 'orange',
+      lineColor: 'orange',
       dotColor: 'yellow'
     };
 

@@ -178,10 +178,10 @@ function Graphsealevel() {
     const defaultOptions = {
       xAxisColor: 'red',
       yAxisColor: 'blue',
-      labelXColor: 'white',
-      labelYColor: 'white',
-      lineColor: 'red',
-      dotColor: 'yellow'
+      labelXColor: 'cyan',
+      labelYColor: 'cyan',
+      lineColor: 'cyan',
+      dotColor: 'white'
     };
 
     drawChart(defaultOptions);
