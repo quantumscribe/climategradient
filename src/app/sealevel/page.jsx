@@ -1,7 +1,6 @@
 "use client"
-import Graphsealevel from "./graphsea";
-import image from "next/image";
 import { useEffect, useState } from 'react';
+import Graphsealevel from "./graphsea";
 import Real from "./real";
 const SeaLevelpage = () => {
   const [zoomedCard, setZoomedCard] = useState(null);
@@ -52,7 +51,7 @@ const SeaLevelpage = () => {
       </div>
 
       <div className="container mx-auto py-10">
-        <div className="mt-10 mx-5">
+        <div>
           <Graphsealevel />
         </div>
         <div className="mt-20 bg-gray-700 rounded-lg">

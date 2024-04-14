@@ -1,8 +1,7 @@
 "use client"
+import { useEffect, useState } from 'react';
 import GraphOcean from "./graphocean";
 import Real from "./real";
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
 
 const OceanWarmingpage = () => {
 
@@ -48,7 +47,7 @@ const OceanWarmingpage = () => {
       </div>
 
       <div className="container mx-auto py-10">
-        <div className="mt-10 mx-5">
+        <div>
           <GraphOcean />
         </div>
         <div className="mt-20 bg-gray-700 rounded-lg" >

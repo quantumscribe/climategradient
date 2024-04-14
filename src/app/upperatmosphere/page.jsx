@@ -1,6 +1,5 @@
 "use client"
-import Image from 'next/image';
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import Graphsta from "./graphsta";
 import Graphtro from "./graphtro";
 
@@ -48,9 +47,8 @@ const UpperAtmospherepage = () => {
       </div>
 
       <div className="container mx-auto py-10">
-        <div className="mt-10 mx-5">
-        
-        <div><Graphtro/></div>
+        <div>
+        <Graphtro/>
   <div className='mt-20'> <Graphsta/></div>
 
        </div>

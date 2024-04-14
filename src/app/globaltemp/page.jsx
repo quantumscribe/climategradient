@@ -1,8 +1,7 @@
 "use client"
+import { useEffect, useState } from 'react';
 import GraphTemperature from "./graphtemparature";
 import Real from "./real";
-import image from "next/image";
-import { useEffect, useState } from 'react';
 
 const GlobalTemperaturepage = () => {
   const [zoomedCard, setZoomedCard] = useState(null);
@@ -52,7 +51,7 @@ const GlobalTemperaturepage = () => {
       </div>
 
       <div className="container mx-auto py-10">
-        <div className="mt-10 mx-5">
+        <div>
           <GraphTemperature />
         </div>
         <div className="mt-20 bg-gray-700 rounded-lg">

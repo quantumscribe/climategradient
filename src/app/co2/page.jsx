@@ -53,7 +53,7 @@ function Page() {
       </div>
 
       <div className="container mx-auto py-10">
-        <div className="mt-10 mx-5">
+        <div>
           <Graphco2 />
         </div>
         <div className="mt-20 rounded-lg">

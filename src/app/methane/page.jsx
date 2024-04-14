@@ -1,7 +1,6 @@
 "use client"
-import Graphmethane from "./graphmethane";
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import Graphmethane from "./graphmethane";
 
 
 const Methanepage = () => {
@@ -48,9 +47,8 @@ const Methanepage = () => {
       </div>
 
       <div className="container mx-auto py-10">
-        <div className="mt-10 mx-5">
-        
-       <div><Graphmethane/></div>
+        <div>
+        <Graphmethane/>
        </div>
 
       <div className="bg-gray-800 py-10 mt-20">
