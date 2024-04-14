@@ -178,8 +178,8 @@ function Graphco2() {
     const defaultOptions = {
       xAxisColor: 'green',
       yAxisColor: 'pink',
-      labelXColor: 'white',
-      labelYColor: 'white',
+      labelXColor: 'yellow',
+      labelYColor: 'yellow',
       lineColor: 'yellow',
       dotColor: 'white'
     };
