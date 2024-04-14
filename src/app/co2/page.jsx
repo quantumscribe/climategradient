@@ -2,9 +2,6 @@
 import { useEffect, useState } from 'react';
 import Graphco2 from './graphco2';
 import Real from './real';
-import { ColorPicker, useColor } from "react-color-palette";
-import "react-color-palette/css";
-
 
 
 function Page() {
@@ -52,8 +49,6 @@ function Page() {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70 "></div>
         <div className="absolute inset-0 flex items-center justify-center text-center">
           <h1 className="text-white text-7xl font-bold text-center font-sans serif text-white-400 transition duration-500 ease-in-out hover:transform hover:-translate-y-12">Carbon Dioxide</h1>
-          <h1 className="text-4xl md:text-6xl font-bold  text-white hover:italic ">Carbon Dioxide</h1>
-
         </div>
       </div>
 
@@ -61,10 +56,7 @@ function Page() {
         <div className="mt-10 mx-5">
           <Graphco2 />
         </div>
-
         <div className="mt-20 bg-gray-700 rounded-lg">
-        <div className="mt-10">
-
           <Real />
         </div>
       </div>
@@ -83,10 +75,7 @@ function Page() {
 
           <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-10">
             {[
-
-              { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh6FfIPGIaImnYYJGlia-9-uAaJtTKAmo2OQ&s', title: "Climate experts sound alarm over thriving plant life at Greenland ice sheet", description: "Significant areas of Greenland’s melted ice sheet are now producing vegetation, risking increased greenhouse gas emissions, rising sea levels and instability of the landscape. A study has documented the change since the 1980s and shows that large areas of ice have been replaced with barren rock, wetlands and shrub growth, creating a change in environment. Analysis of satellite records has shown that over the past three decades an estimated 11,000 sq miles of Greenland’s ice sheet and glaciers have melted, an area equivalent to the size of Albania and amounting to 1.6% of its total ice cover.As ice has retreated, the amount of land with vegetation growing on it has increased by 33,774 sq miles, more than twice the area covered when the study began.." },
-              { image: 'https://www.hindustantimes.com/ht-img/img/2024/01/26/550x309/a8887e06-2154-11ec-bc30-10e4c85a206c_1632941002194_1706258624258.jpg', title: "Trillions Needed: Trees Can't Fix Emissions Alone", description: "Each year, a staggering 36.8 billion metric tons of CO2 are released into the atmosphere, primarily from burning fossil fuels. While planting trees is a key weapon in the fight against climate change, it's important to understand the challenge. There's no one-to-one conversion between CO2 and trees due to variations in species, age, and environment. However, estimates suggest the number of trees required to absorb this amount of CO2 would be in the trillions, highlighting the need for both aggressive tree planting and reduced CO2 emissions." },
-
+              { image: 'https://www.europarl.europa.eu/resources/library/images/20240410PHT20344/20240410PHT20344-cl.jpg', title: "MEPs adopt stricter CO2 emissions targets for trucks and buses", description: "The regulation, addressing emissions from new trucks, buses and trailers, was endorsed by MEPs with 341 votes in favour, 268 against and 14 abstentions.CO2 emissions from large trucks and buses will have to be reduced by 45% for the period 2030-2034, 65% for 2035-2039 and 90% as of 2040. By 2030, new urban buses will need to reduce their emissions by 90% and become zero-emission vehicles by 2035. Emissions reduction targets are also set for trailers (7.5%) and semi-trailers (10%), starting from 2030The law requires the Commission to conduct a detailed review of the effectiveness and impact of the new rules by 2027. This review will need to assess, among others, whether to apply the rules to small lorries, the role of a methodology for registering HDVs exclusively running on CO2 neutral fuels and the role that a carbon correction factor could have in the transition towards zero-emission HDVs." },
               { image: 'https://i.unu.edu/media/ourworld.unu.edu-en/article/21453/sea-level-rise-is-inevitable-but-we-can-still-prevent-catastrophe-for-coastal-regions.jpg', title: 'Rising seas, fueled by CO2, threaten to swallow millions in coastal cities.', description: "Rising CO2 traps heat, warming the oceans which then expand and melt land-based ice. This double whammy threatens coastal regions with rising sea levels. Depending on our success in curbing emissions, estimates suggest sea levels could rise by 0.3 to 2 meters by 2100, potentially submerging significant areas of low-lying land and displacing millions living in vulnerable coastal cities. The exact number of cities is uncertain, but some studies suggest hundreds of cities around the world could be partially or entirely inundated by rising seas by the end of the century." },
               { image: 'https://sb.ecobnb.net/app/uploads/sites/3/2022/04/copertina-1.jpg', title: 'CO2 Trap: Plants Feast, Animals Starve', description: "CO2 emissions are a double-edged sword for nature. Plants initially enjoy a growth boost, but this buffet comes with a hidden cost: their food quality suffers. This disrupts the food chain for animals who rely on them. Meanwhile, oceans become acidic as they absorb CO2, dissolving the shells of coral and other creatures. Rising seas, fueled by a warming planet, threaten coastal habitats, disrupting breeding grounds and migration routes for wildlife. Studies suggest extinction rates could skyrocket 20-50 times by 2100 if we don't cut CO2. The future of plants, animals, and the entire web of life hinges on our ability to curb CO2 emissions." },
               { image: 'https://varmentguard.com/uploads/permanent/1d3825ccca58100c20f547962159623d', title: 'CO2 heat: Up go temps, down goes nature.', description: "Earth's CO2 blanket traps heat, disrupting ecosystems and pushing temperatures up. Studies warn of extinction rates spiking 20-50 times by 2050 if emissions continue. Countless species already face a precarious fight for survival due to scorching heat, melting glaciers, and habitat loss. While pinpointing exact extinction numbers linked solely to CO2 is difficult, the decline in biodiversity is a troubling sign. Urgent action to curb CO2 emissions is critical to prevent a mass extinction event." }
@@ -132,10 +121,4 @@ function Page() {
   )
 }
 
-
 export default Page;
-
-
-
-
-
