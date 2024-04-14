@@ -178,10 +178,10 @@ function Graphtro() {
     const defaultOptions = {
       xAxisColor: 'red',
       yAxisColor: 'blue',
-      labelXColor: 'white',
-      labelYColor: 'white',
-      lineColor: 'red',
-      dotColor: 'yellow'
+      labelXColor: 'orange',
+      labelYColor: 'orange',
+      lineColor: 'orange',
+      dotColor: 'white'
     };
 
     drawChart(defaultOptions);

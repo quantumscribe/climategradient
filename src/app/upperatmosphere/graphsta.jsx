@@ -178,10 +178,10 @@ function Graphsta() {
     const defaultOptions = {
       xAxisColor: 'red',
       yAxisColor: 'blue',
-      labelXColor: 'white',
-      labelYColor: 'white',
-      lineColor: 'red',
-      dotColor: 'yellow'
+      labelXColor: 'blue',
+      labelYColor: 'blue',
+      lineColor: 'blue',
+      dotColor: 'white'
     };
 
     drawChart(defaultOptions);
