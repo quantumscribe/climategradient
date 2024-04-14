@@ -56,7 +56,7 @@ function Page() {
         <div className="mt-10 mx-5">
           <Graphco2 />
         </div>
-        <div className="mt-20 bg-gray-700 rounded-lg">
+        <div className="mt-20 rounded-lg">
           <Real />
         </div>
       </div>
