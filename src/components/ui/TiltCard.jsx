@@ -65,7 +65,7 @@ const TiltCard = ({CardTitle,CardPara,location}) => {
         className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg "
       >
         
-        <p
+        <div
           style={{
             transform: "translateZ(50px)",
           }}
@@ -81,7 +81,7 @@ const TiltCard = ({CardTitle,CardPara,location}) => {
             <a href={location}><button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 object-right-bottom	">Know More </button>
 </a>
         </div>
-        </p>
+        </div>
       </div>
     </motion.div>
   );
