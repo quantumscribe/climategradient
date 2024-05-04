@@ -12,7 +12,7 @@ var prevMonth = String(previousDate.getMonth() + 1).padStart(2, '0');
 var prevDay = String(previousDate.getDate()).padStart(2, '0');
 var formattedPrevDate = `${prevYear}-${prevMonth}-${prevDay}`;
 var date = formattedPrevDate;
-var url ='https://newsapi.org/v2/everything?q=climate%20change%20OR%20natural%20disasters%20OR%20renewable%20energy&from=2024-03-28&sortBy=publishedAt&apiKey=58dbbe2b20b34fcdbf5c8bfe16d8cd50';
+var url ='https://newsapi.org/v2/everything?q=climate%20change%20OR%20natural%20disasters%20OR%20renewable%20energy&from={date}&sortBy=publishedAt&apiKey=58dbbe2b20b34fcdbf5c8bfe16d8cd50';
 
   const GrabNews =() =>{
     axios.get(url)
